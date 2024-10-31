@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="index.html" class="logo">
+            <img src="image/logo.jpg" alt="Car Rental Logo">
+            <p>Chadoyven Car Rental</p>
+        </a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="vehicle.html">vehicles</a>
+            <a href="#about">about</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <img src="image/user.png" class="user-pic" onclick="toggleMenu()">
+
+            
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="image/user.png" alt="">
+                        <h2>Ako Budoy</h2>
+                    </div>
+                    <hr>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="image/user.png" alt="">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="image/booking.png" alt="">
+                        <p>My Booking</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="image/logout.png" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+    </header>
+
+    <section class="vehicle-details-container">
+        <!-- Left Box -->
+        <div class="left-box">
+            <img src="image/car1.jpg" alt="Car Image">
+            <h2>Car Name</h2>
+            <!-- Small Columns for Car Info -->
+            <div class="car-info">
+                <div class="info-box"><i class="fas fa-calendar-alt"></i><span>2024<br>Year</span></div>
+                <div class="info-box"><i class="fas fa-cogs"></i><span>Petrol<br>Fuel</span></div>
+                <div class="info-box"><i class="fas fa-user-plus"></i><span>4<br>Seats</span></div>
+            </div>
+    
+            <!-- Tabs Box -->
+            <div class="tab-box">
+                <div class="tabs">
+                    <button class="tab-btn active" data-target="#overview">Overview</button>
+                    <button class="tab-btn" data-target="#accessories">Accessories</button>
+                </div>
+                <div class="tab-content">
+                    <div id="overview" class="tab-pane active">
+                        <p>This is the vehicle description.</p>
+                    </div>
+                    <div id="accessories" class="tab-pane">
+                        <table class="accessories-table">
+                            <tr>
+                                <td>Air Conditioning</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>Parking Sensors</td>
+                                <td>X</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Box -->
+        <div class="right-box">
+            <h3>Rent Price/1day</h3>
+            <div class="price">$10,000</div>
+            <form action="">
+                <p>from date</p>
+                <input type="date" class="box" placeholder="Pick-up date">
+                <p>Pick Up Time</p>
+                <input type="time" class="box" placeholder="Pick-up time">
+                <p>to date</p>
+                <input type="date" class="box" placeholder="Pick-up date">
+                <center>
+                    <div>
+                        <img src="image/gcash.png" class="gcash">
+                        
+                    </div>
+                    
+                    <img src="image/QR.jpg" class="qrcode">
+                    <p>Scan Me for Payment</p>
+                </center>
+                <p style="color: rgb(161, 160, 160);"><br>50% down payment of the price  <br>Note: Take a Screenshot of the reciept of the payment of Gcash here! </p>
+                <br>
+                <input type="file" id="img" name="img" accept="image/*">
+                <br>
+                <br>
+                <p>message:</p>
+                <textarea class="box" placeholder="Additional message or special requests"></textarea>
+                <input type="submit" value="Review your Booking" class="btn">
+            </form>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html"><i class="fas fa-arrow-right"></i> Home </a>
+                <a href="vehicle.html"><i class="fas fa-arrow-right"></i> Vehicles </a>
+                <a href="about.html"><i class="fas fa-arrow-right"></i> About Us </a>
+                <a href="contact.html"><i class="fas fa-arrow-right"></i> Contact </a>
+            </div>
+
+            <div class="box">
+                <h3>Contacts</h3>
+                <a href="#"><i class="fas fa-phone"></i> +64864864 </a>
+                <a href="#"><i class="fas fa-mobile"></i> +64864864 </a>
+                <a href="#"><i class="fas fa-envelope"></i> gmail </a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> gingoog, ph </a>
+            </div>
+
+            <div class="box">
+                <h3>Social Media</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook </a>
+            </div>
+        </div>
+
+        <div class="credit"> create by me web designer | all rights reserved!</div>
+
+    </section>
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabPanes.forEach(pane => pane.classList.remove('active'));
+
+            button.classList.add('active');
+            document.querySelector(button.getAttribute('data-target')).classList.add('active');
+        });
+    });
+});
+    </script>
+</body>
+</html>

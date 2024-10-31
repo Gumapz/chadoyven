@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="message">
+        <img src="image/m.png" alt="">
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="index.html" class="logo">
+            <img src="image/logo.jpg" alt="Car Rental Logo">
+            <p>Chadoyven Car Rental</p>
+        </a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="vehicle.html">vehicles</a>
+            <a href="#about">about</a>
+            <a href="contact.html">contact</a>
+        </nav>
+        <img src="image/user.png" class="user-pic" onclick="toggleMenu()">
+
+            
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="image/user.png" alt="">
+                        <h2>Ako Budoy</h2>
+                    </div>
+                    <hr>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="image/user.png" alt="">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="image/booking.png" alt="">
+                        <p>My Booking</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="image/logout.png" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+    </header>
+
+    <!-- Vehicles Section -->
+    <section class="featured" id="featured">
+        <h1 class="heading"><span>featured</span> cars</h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/car1.jpg" alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">23,000</div>
+                    <a href="car-details.html" class="btn">check out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car2.jpg" alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">23,000</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car3.jpg" alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">23,000</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car1.jpg" alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">23,000</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper featured-slider">
+            <center>
+                <h1 style="font-size: 50px;">Motorcycle</h1>
+            </center>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/car1.jpg" alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">23,000</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car2.jpg" alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">23,000</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car3.jpg" alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">23,000</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/car1.jpg" alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">23,000</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html"><i class="fas fa-arrow-right"></i> Home </a>
+                <a href="vehicle.html"><i class="fas fa-arrow-right"></i> Vehicles </a>
+                <a href="about.html"><i class="fas fa-arrow-right"></i> About Us </a>
+                <a href="contact.html"><i class="fas fa-arrow-right"></i> Contact </a>
+            </div>
+
+            <div class="box">
+                <h3>Contacts</h3>
+                <a href="#"><i class="fas fa-phone"></i> +64864864 </a>
+                <a href="#"><i class="fas fa-mobile"></i> +64864864 </a>
+                <a href="#"><i class="fas fa-envelope"></i> gmail </a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> gingoog, ph </a>
+            </div>
+
+            <div class="box">
+                <h3>Social Media</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook </a>
+            </div>
+        </div>
+
+        <div class="credit"> create by me web designer | all rights reserved!</div>
+
+    </section>
+
+    <!-- Include Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Initialize Swiper for featured-slider
+        var swiper = new Swiper(".featured-slider", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop:true,
+            grabCursor:true,
+            centeredSlides:true,
+            autoplay: {
+                delay: 9500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                760: {
+                    slidesPerView: 2,
+                },
+                991: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+</html>

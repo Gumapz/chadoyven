@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>AdminHub</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Admin</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="index.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li >
+				<a href="#" class="dropdown-toggle">
+					<i class='bx bxs-shopping-bag-alt'></i>
+					<span class="text">Brands</span>
+					<i class='bx bx-chevron-down'></i>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="brand.html">Create Brand</a></li>
+					<li><a href="#">Manage Brand</a></li>
+				</ul>
+			</li>
+			<li class="active">
+				<a href="#" class="dropdown-toggle">
+					<i class='bx bxs-doughnut-chart'></i>
+					<span class="text">Cars</span>
+					<i class='bx bx-chevron-down'></i>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Post Cars</a></li>
+					<li><a href="managecar.html">Manage cars</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<a href="managebook.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Manage Bookings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Manage feedback</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Post Cars</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Cars</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Post Cars</a>
+						</li>
+					</ul>
+				</div>
+                
+            </div>
+            <div class="post-car-box">
+                <h2>Basic Info</h2>
+                <form class="post-car-form">
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="car-name">Car Name</label>
+                            <input type="text" id="car-name" name="car-name" placeholder="Enter the car name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="car-brand">Car Brand</label>
+                            <select id="car-brand" name="car-brand" required>
+                                <option value="">Select a brand</option>
+                                <option value="brand1">Brand 1</option>
+                                <option value="brand2">Brand 2</option>
+                                <option value="brand3">Brand 3</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group overview-container">
+                        <label for="car-overview">Car Overview</label>
+                        <textarea id="car-overview" placeholder=""></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="car-name">Price</label>
+                            <input type="text" id="car-name" name="car-name" placeholder="Enter the car name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="car-brand">Select fuel type</label>
+                            <select id="car-brand" name="car-brand" required>
+                                <option value="">Select</option>
+                                <option value="brand1">Brand 1</option>
+                                <option value="brand2">Brand 2</option>
+                                <option value="brand3">Brand 3</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="car-name">Model Year</label>
+                            <input type="text" id="car-name" name="car-name" placeholder="Enter the car name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="car-name">Seating Capacity</label>
+                            <input type="text" id="car-name" name="car-name" placeholder="Enter the car name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group image-upload">
+                        <label for="car-image">Upload Image</label>
+                        <div class="image-upload-container">
+                            <input type="file" id="car-image" accept="image/*" />
+                           
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="accessories-box">
+                <h2>Accessories</h2>
+                <div class="accessories-container">
+                    <label><input type="checkbox" name="accessories" value="aircon"> Aircon</label>
+                    <label><input type="checkbox" name="accessories" value="power-steering"> Power Steering</label>
+                    <label><input type="checkbox" name="accessories" value="cd-player"> CD Player</label>
+                    <label><input type="checkbox" name="accessories" value="navigation-system"> Navigation System</label>
+                    <label><input type="checkbox" name="accessories" value="bluetooth"> Bluetooth</label>
+                    <label><input type="checkbox" name="accessories" value="sunroof"> Sunroof</label>
+                    <label><input type="checkbox" name="accessories" value="leather-seats"> Leather Seats</label>
+                    <label><input type="checkbox" name="accessories" value="backup-camera"> Backup Camera</label>
+                    <label><input type="checkbox" name="accessories" value="parking-sensors"> Parking Sensors</label>
+                    <label><input type="checkbox" name="accessories" value="heated-seats"> Heated Seats</label>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="save-btn">Save</button>
+                </div>
+            </div>
+            
+            
+            
+        </main>
+    </section>
+</body>
+</html>
